@@ -2,7 +2,7 @@
     [id]           INT                                         IDENTITY (1, 1) NOT NULL,
     [code]         NVARCHAR (128)                              NOT NULL,
     [name]         NVARCHAR (255)                              NOT NULL,
-    [descript]     NVARCHAR (MAX)                              NULL,
+    [descript]     NVARCHAR (MAX)                              NOT NULL,
     [sysVersionId] ROWVERSION                                  NOT NULL,
     [sysAppName]   NVARCHAR (255)                              DEFAULT (app_name()) NOT NULL,
     [sysUserName]  NVARCHAR (255)                              DEFAULT (user_name()) NOT NULL,
